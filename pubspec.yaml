@@ -17,6 +17,12 @@ dependencies:
   agora_rtc_engine: ^6.5.3
   permission_handler: ^12.0.1
   flutter_dotenv: ^6.0.0
+  shared_preferences: ^2.5.3
+  http: ^1.5.0
+  easy_load_more: ^2.0.0
+  modal_progress_hud_nsn: ^0.5.1
+  keyboard_dismisser: ^3.0.0
+  google_fonts: ^6.3.2
 
 dev_dependencies:
   flutter_test:
