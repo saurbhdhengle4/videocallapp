@@ -39,12 +39,6 @@ class UserView extends GetView<UserController> {
                     backgroundImage: NetworkImage(user.avatar),
                   ),
                   title: Text(user.name),
-                  subtitle: Text(user.email),
-                  trailing: const Icon(
-                    Icons.arrow_forward_ios_sharp,
-                    size: 16,
-                    color: Colors.grey,
-                  ),
                   onTap: () {
                     Get.defaultDialog(
                       backgroundColor: Colors.white,
