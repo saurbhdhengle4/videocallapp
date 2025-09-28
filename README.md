@@ -1,25 +1,14 @@
 # vcapp
 
-A new Flutter project.
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
 
 ## Build Instructions
 
 ### Flutter Version
 
-This app is developed and tested with **Flutter 3.10**.
+This app is developed and tested with 
+**Flutter (Channel stable, 3.29.2)**. **Dart version 3.7.2**. **Getx state management**
 
 ### Build the App
 
@@ -31,9 +20,11 @@ To build the release iOS app (requires macOS and Xcode), run:
 
 flutter build ios --release
 
-Generate a Signing Key (Keystore)
+### Generate a Signing Key (Keystore) For Android Configure Android
 
-appple@appples-MacBook-Pro Desktop % keytool -genkey -v -keystore vcapp-release.keystore -alias vcappkey -keyalg RSA -keysize 2048 -validity 10000
+appple@appples-MacBook-Pro Desktop % 
+
+keytool -genkey -v -keystore vcapp-release.keystore -alias vcappkey -keyalg RSA -keysize 2048 -validity 10000
 
 Enter keystore password:  
 Re-enter new password: 
@@ -62,5 +53,7 @@ Generating 2,048 bit RSA key pair and self-signed certificate (SHA256withRSA) wi
 [Storing vcapp-release.keystore]
 
 
-For App sining for android
-Use the keytool command found in the Java Development Kit (JDK) to generate a keystore file:
+###  Ios Configure ios Signing
+
+" ios build "  then open on xcode add your profile accound theb build and archive
+
